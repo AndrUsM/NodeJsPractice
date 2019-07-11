@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <style>
+        .progress{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 15px;
+            border-radius: 0 10px 10px 0;
+            background: black;
+            width: 1%;
+
+        }
+        ul{
+            width: 40%;
+            margin: 0 30%;
+            /* border: 1px solid red; */
+            /* padding: .5% 5%; */
+            font: 25px darkblue;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        ul li{
+            margin: .5%;
+            padding: .5%;
+            text-align: center;
+            background-color: yellow;
+            color: darkslateblue;
+            border-radius: 5px;
+        }
+        input:-webkit-placeholder{
+            color: red;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(-45deg, red, yellow);
+            /* background-repeat: no-repeat; */
+        }
+        button[type="button"], button[type="submit"]{
+            width: 50%;
+            margin: .5% 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bk-dark" style="background-color: #e3f2fd;">
+        <a href="#" class = "navbar-brand">
+            <i class="fa fa-check-cicle"></i>
+            TodoList
+        </a>
+    </nav>
+    <!-- input form -->
+    <div class="container">
+        <row>
+            <h1 class="text-center">Enter todo item</h1>
+            <form action="/newtodo" method="post" class="col-6 mx-auto">
+                <input type="text" name="item" class="form-control" value="New todo item"
+                placeholder="Entet todo Item"><span> <button class="btn btn-primary" type="submit" accesskey="Enter">Submit</button></span>
+            </form>
+        </row>
+        <!-- unordered list (ul) -->
+        <div class="row">
+            <ul class="col-6 mx-auto">
+                <% for(let i = 0; i < toDoList.length; i++){ %>
+                    <li> <%= toDoList[i].name %> </li>
+                <% } %>
+            </ul>
+        </div>
+        <row>
+            <h1 class="text-center">Deleting</h1>
+            <form action="./deletetodo" method="post" class="col-6 mx-auto">
+                <input type="text" class="form-control" name="delItem">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-trash"></i></button>
+            </form>
+        </row>
+    </div>
+    <script>
+        let progress = document.querySelector('.progress')
+        console.log(progress)
+        window.addEventListener('scroll', progressBar)
+        function progressBar(e){
+            let windowScroll = document.body.scrollTop || document.documentElement.scrollTop
+            let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let per = windowScroll/windowHeight *100
+            console.log(per)
+            progress.style.width = per + '%'
+            console.log(progress.style.width)
+        }
+    </script>
+    
+</body>
+</html>
