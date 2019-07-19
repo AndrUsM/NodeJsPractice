@@ -56,6 +56,7 @@ handlers.public = async (data, cb) => {
                 content_type = 'png'
                 extension = 'image'
                 break;
+            case asset_name.includes('.jpg'):
             case asset_name.includes('.jpeg'):
                 content_type = 'jpg'
                 extension = 'image'
