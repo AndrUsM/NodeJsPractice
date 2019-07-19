@@ -20,7 +20,7 @@ server.run = () => {
         console.log(`Http started: http://127.0.0.1:${config.httpPort}`);
         //Open in browser
         (async () => {
-            await open(`http://127.0.0.1:${config.httpPort}/index`, {app: ['google-chrome', '--incognito']});
+            await open(config.globalTokens.baseUrl, {app: ['google-chrome', '--incognito']});
         })();
         
     })
