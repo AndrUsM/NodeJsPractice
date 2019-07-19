@@ -3,7 +3,9 @@ globalTokens= {
     appName: 'Http/Https template',
     author: 'AndrUsM',
     yearCreated: new Date().getFullYear(),
-    licence: 'MIT'
+    licence: 'MIT',
+    baseUrl: 'http://127.0.0.1:3000/',
+    company: 'NotRealCompany'
 }
 environtments.staging = {
     httpPort: 3000,
