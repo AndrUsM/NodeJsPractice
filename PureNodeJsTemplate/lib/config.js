@@ -4,7 +4,7 @@ globalTokens= {
     author: 'AndrUsM',
     yearCreated: new Date().getFullYear(),
     licence: 'MIT',
-    baseUrl: 'http://127.0.0.1:3000/',
+    baseUrl: 'http://127.0.0.1:3000/index',
     company: 'NotRealCompany'
 }
 environtments.staging = {
