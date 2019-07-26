@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "node app.js"
   },
   "repository": {
     "type": "git",
