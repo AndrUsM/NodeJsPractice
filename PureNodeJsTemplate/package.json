@@ -1,0 +1,18 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "description": "Http/Https template using Node Js",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "open": "^6.4.0"
+  },
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "author": "AndrUsM",
+  "license": "ISC"
+}
