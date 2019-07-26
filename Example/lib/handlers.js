@@ -86,7 +86,7 @@ handlers.index = async (data, cb) => {
         cb(500, null, 'html')
     }
 }
-handlers.sign_in = async (data, cb) => {
+handlers.find_user = async (data, cb) => {
     if(data.method !== 'get'){
         cb(405, null, 'html')
     }
@@ -97,7 +97,7 @@ handlers.sign_in = async (data, cb) => {
         'page_title' : 'Search users'
     }
     try{
-        let template = await helpers.getTemplate('sign_in')
+        let template = await helpers.getTemplate('find_user')
         template = await helpers.addHeaderFooter(template)
         template = helpers.interpolate(template, exampleData)
         cb(200, template, 'html')
