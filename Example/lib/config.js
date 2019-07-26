@@ -3,7 +3,7 @@ globalTokens= {
     appName: 'Http/Https application',
     author: 'AndrUsM',
     yearCreated: new Date().getFullYear(),
-    licence: 'MIT',
+    licence: 'ISC',
     baseUrl: 'http://localhost:3000/',
     company: 'NotRealCompany'
 }
