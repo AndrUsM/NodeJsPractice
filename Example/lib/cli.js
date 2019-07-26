@@ -107,6 +107,7 @@ cli.responders.help = () => {
         'delete tasks' : 'Delete all tasks',
         'delete task {{hash_id}}' : 'Delete task with id: hash_id',
         'open google-chrome' : 'Open page in google chrome',
+        'open firefox' : 'Open page in firefox browser',
         'reviews' : 'View all reviews info',
         'recent reviews' : 'View all review that was sended today'
     }
