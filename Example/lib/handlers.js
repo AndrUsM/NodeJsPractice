@@ -74,7 +74,8 @@ handlers.index = async (data, cb) => {
         'text' : 'Http/Https Node Js application',
         'pageHeader' : 'Todo list app',
         'header.description' : 'You can create you todolist <a href = "add_todo">here</a>',
-        'description' : 'Test work'
+        'description' : 'Test work',
+        'page_title' : 'Home page'
     }
     try{
         let template = await helpers.getTemplate('index')
@@ -92,7 +93,8 @@ handlers.sign_in = async (data, cb) => {
     const exampleData = {
         'text' : 'Http/Https Node Js application',
         'pageHeader' : 'Todo list app',
-        'header.description' : 'You can create you todolist <a href = "add_todo">here</a>'
+        'header.description' : 'You can create you todolist <a href = "add_todo">here</a>',
+        'page_title' : 'Search users'
     }
     try{
         let template = await helpers.getTemplate('sign_in')
@@ -112,7 +114,8 @@ handlers.addTodo = async (data, cb) => {
         'pageHeader' : 'Todo list app',
         'header.description' : 'You can create you todolist <a href = "add_todo">here</a>',
         'todos_list_data' : await _data.formatedList('tasks'),
-        'todo_placeholder' : `&quot;${random_sentence.sentence()}&quot;`
+        'todo_placeholder' : `&quot;${random_sentence.sentence()}&quot;`,
+        'page_title' : 'ToDo List'
     }
     try{
         let template = await helpers.getTemplate('addTodo')
@@ -133,7 +136,8 @@ handlers.about = async (data, cb) => {
         'header.description' : 'You can create you todolist <a href = "add_todo">here</a>',
         'date1' : `How i started my way ${new Date().getUTCFullYear()},${helpers.identerficateMonth(new Date().getMonth())}, ${new Date().getDate()}`,
         'date2' : `How i need work ${new Date().getUTCFullYear()},${helpers.identerficateMonth(new Date().getMonth())}, ${new Date().getDate()}`,
-        'addvertise' : fs.readFileSync(path.join(__dirname, 'jokes', 'jokesLib', '.data', `comment.dat`),'utf8')
+        'addvertise' : fs.readFileSync(path.join(__dirname, 'jokes', 'jokesLib', '.data', `comment.dat`),'utf8'),
+        'page_title' : 'About'
     }
     try{
         let template = await helpers.getTemplate('about')
@@ -152,6 +156,8 @@ handlers.account_create = async (data, cb) => {
         'text' : 'Http/Https Node Js application',
         'pageHeader' : 'Todo list app',
         'header.description' : 'You can create you todolist <a href = "add_todo">here</a>',
+        'page_title' : 'Register Page',
+        'page_title' : 'Error 404'
     }
     try{
         let template = await helpers.getTemplate('register')
