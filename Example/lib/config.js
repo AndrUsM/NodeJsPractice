@@ -1,6 +1,6 @@
 const environtments = {}
 globalTokens= {
-    appName: 'Http/Https template',
+    appName: 'Http/Https application',
     author: 'AndrUsM',
     yearCreated: new Date().getFullYear(),
     licence: 'MIT',
