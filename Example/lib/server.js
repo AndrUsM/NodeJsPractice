@@ -21,9 +21,9 @@ server.run = () => {
     http_server.listen(config.httpPort, () => {
         console.log(`Http started: http://127.0.0.1:${config.httpPort}`);
         //Open in browser
-        // (async () => {
-        //     await open(config.globalTokens.baseUrl, {app: ['google-chrome', '--incognito']});
-        // })();
+        (async () => {
+            await open(config.globalTokens.baseUrl, {app: ['google-chrome', '--incognito']});
+        })();
     })
     https_server.listen(config.httpsPort, () => {
         console.log(`Https started at ${config.httpsPort}`)
