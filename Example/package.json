@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "description": "Http/Https template using Node Js",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndrUsM/NodeJsPractice/Example"
+  },
+  "author": "AndrUsM",
+  "license": "ISC",
+  "devDependencies": {
+    "open": "^6.4.0"
+  }
+}

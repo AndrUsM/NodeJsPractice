@@ -1,0 +1,84 @@
+.todos_container{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    /* background: rgba(199, 54, 54, 0.7) */
+}
+.todos_container ul li{
+    padding: 1% 0;
+    font-size: 25px;
+    overflow: hidden;
+    border: 1px solid red;
+    list-style-type: none;
+}
+.todos_container ul li:hover{
+    color: #000;
+    background:#fff;
+    border: 1px solid transparent;
+}
+.tasks_form{
+    width: 100%;
+}
+.tasks_form header{
+    font-size: 30px;
+    padding: .3% 0;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: red;
+    text-shadow: 1px 1px darkred;
+}
+.tasks_form .main_elements{
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+}
+.tasks_form input[type=text]{
+    width: 90%;
+    padding: .5% 0;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 20px;
+}
+.tasks_form button{
+    font-size: 20px;
+    padding: .5%;
+    width: 10%;
+    color: white;
+    background: #000;
+}
+.tasks_form button:hover{
+    color: #000;
+    background:#fff;
+}
+.todos_container ul li span{
+    font-size: 15px;
+    vertical-align: middle;
+    background: #fff;
+    color: rgb(4, 29, 29);
+    font-weight: bold;
+    padding: .3%;
+    margin-left: 1%;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 100%;
+}
+.todos_container ul li span:hover{
+    color: #000;
+    background: #fff;
+}
+@media (max-width: 600px){
+    .tasks_form input[type=text]{
+        width: 70%;
+        padding: 1% 0;
+        text-align: center;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .tasks_form button{
+        padding: 1%;
+        width: 30%;
+    }
+}

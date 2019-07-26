@@ -1,0 +1,57 @@
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>My photo:</h5>
+    <img class="img" src="public/images/boy.jpg" style="height:200px;">
+    <p>I am web developer in {global.company}.</p>
+
+    <h3>My projects</h3>
+    <p>I am beginner, do not judge strictly.</p>
+      <img class="img" src="public/images/firstProject.png"><br>
+      <img class="img" src="public/images/secondProject.jpeg"><br>
+      <img class="img" src="public/images/thirdProject.jpg">
+  </div>
+  <div class="main">
+    <h2>About me</h2>
+    <h5>{date1}</h5>
+    <img class="img" src="public/images/itStatus.jpg" alt="">
+    <p>I start my career as course student in NotRealCompany.</p>
+    <p>You can't do this if you're not dedicated and determined, and have a strong faith. Because it's extremely hard, especially trying to work a job and do it.</p>
+    <br>
+
+    <h2>My work day</h2>
+    <h5>{date2}</h5>
+    <img class="img" src="public/images/workday.png" alt="" style = "height: 400px;">
+    <p>Before we get started you should twise think.</p>
+
+    <h2>About profession:</h2>
+    <img class = "img" src="public/images/aboutImage.png" alt="" style = "height: 270px;">
+    <p>A computer programmer, sometimes called more recently a coder (especially in more informal contexts), 
+      is a person who creates computer software. The term computer programmer can refer to a specialist in one area of computers,
+      or to a generalist who writes code for many kinds of software. The generalist programmers aren't required to have any knowledge 
+      of the fields and of the problems that the users want to solve or of the tasks to automate. This is the job of the analysts, 
+      people who act as interfaces between the field practitioners and the programmers. When the analysis is done, 
+     the analysts create some kind of symbolic description of the system using languages like UML, 
+     blueprints that the programmers use to build the computer software. Sometimes, especially when the domain of the problems 
+     aren't much complex and the working groups are small, analysis, system design, and coding are carried out by programmer analyst.</p>
+  </div>
+</div>
+<div class = "popuptext">
+  <form action="reviews" method="post" class = "review_form">
+    <h1>Hi! My name is John Doe!</h1>
+    <h2>I want help you.</h2>
+    <h3 style = "color: red;">You can write comment in field below <span class = "closeBtn">(or CLOSE IT ADD)</span></h3>
+    <textarea name="" id = "review" cols="30" rows="10" placeholder="{addvertise}"></textarea>
+    <input type="text" id = "author" placeholder="Author">
+    <button type="submit">Send message!</button>
+  </form>
+</div>
+<script>
+  let displayPopUp = () => {
+    document.querySelector('.popuptext').style.display = 'block'
+  }
+  document.querySelector('.closeBtn').onclick = () => {
+    document.querySelector('.popuptext').style.display = 'none'}
+    setInterval(displayPopUp , 1000 * 60)
+</script>

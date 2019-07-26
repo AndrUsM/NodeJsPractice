@@ -1,0 +1,6 @@
+Server work on linux:Linux:x64
+Site hostname: anarky
+Server PC Info: {"uid":1000,"gid":1000,"username":"user","homedir":"/home/user","shell":"/bin/bash"}
+[{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":800,"times":{"user":676500,"nice":0,"sys":147600,"idle":7155700,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":803,"times":{"user":634600,"nice":0,"sys":150300,"idle":7194400,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":805,"times":{"user":654200,"nice":200,"sys":145600,"idle":7187100,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":800,"times":{"user":648300,"nice":19800,"sys":150400,"idle":7103200,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":800,"times":{"user":586000,"nice":0,"sys":176400,"idle":7199400,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":800,"times":{"user":598100,"nice":400,"sys":135500,"idle":7207000,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":800,"times":{"user":617900,"nice":0,"sys":135700,"idle":7235300,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":800,"times":{"user":633600,"nice":0,"sys":141800,"idle":7203500,"irq":0}}]
+Logs
+Get: {"_id":"4fVZ9ex8E","author":"John","text":"I buy it goods, Lorem ipsum dolor!","created_at":"2019.6.25"}

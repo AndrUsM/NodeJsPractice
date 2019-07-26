@@ -1,0 +1,26 @@
+form.error{
+    width: 90%;
+    margin: 1% auto;
+    /* background: gray; */
+    color: white;   
+    text-align: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;  
+}
+form.error h1{
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+form.error p{
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+form.error p span{
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}

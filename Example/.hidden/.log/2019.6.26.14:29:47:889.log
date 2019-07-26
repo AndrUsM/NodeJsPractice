@@ -1,0 +1,6 @@
+Server work on linux:Linux:x64
+Site hostname: anarky
+Server PC Info: {"uid":1000,"gid":1000,"username":"user","homedir":"/home/user","shell":"/bin/bash"}
+[{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":775,"times":{"user":7046000,"nice":22200,"sys":2013100,"idle":86776500,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":763,"times":{"user":7184700,"nice":7600,"sys":1829900,"idle":86958700,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":791,"times":{"user":6981700,"nice":9600,"sys":1810000,"idle":87219800,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":769,"times":{"user":7170300,"nice":5500,"sys":1791800,"idle":86358300,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":798,"times":{"user":7103400,"nice":4200,"sys":1795200,"idle":87080600,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":759,"times":{"user":6650600,"nice":6800,"sys":2097600,"idle":86603000,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":784,"times":{"user":6843500,"nice":6000,"sys":1822200,"idle":87300400,"irq":0}},{"model":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz","speed":787,"times":{"user":6887300,"nice":5300,"sys":1918600,"idle":87117600,"irq":0}}]
+Logs
+Del: 5e822260675405823f4f17abc20ede491612f42e5f540a3b003f24ecdd2056e0

@@ -1,0 +1,114 @@
+@import './about.css';
+@import './register.css';
+*{
+    background: #000;
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color: white;
+    text-align: center;
+}
+header nav a{
+    text-transform: capitalize;
+}
+p{
+    font-size: 19px;
+}
+header{
+    text-align: center;
+    color: #fff;
+}
+nav{
+    display: flex;
+}
+nav a{
+    color: #fff;
+    padding: 12px 18px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.description{
+    padding: 1% 0;
+}
+.image{
+    width: 100%;
+    margin: 1% auto;
+}
+.image img{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    border: 3px solid lightblue;
+}
+footer{
+    bottom: 0;
+    left: 0;
+    /* position: fixed; */
+    padding: .5% 0;
+    text-align: center;
+    width: 100%;
+}
+footer p{ font-size: 1rem; }
+.content{
+    width: 90%;
+    margin: 1% auto;
+    /* background: gray; */
+    color: white;   
+    text-align: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.content h1{
+    font-size: 40px;
+    margin-bottom: 1%;
+}
+.content p{
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+@media (max-width: 786px){
+    .image img{
+        width: 100%;
+    }
+}
+@media (max-width: 1200px){
+    .image img{
+        width: 50%;
+    }
+}
+@media (min-width: 1716px){
+    .image img{
+        width: 55%;
+    }
+}
+table{
+    width: 90%;
+    text-align: center;
+    margin: 1% auto;
+    padding: .5%;
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    display: none;
+    border-radius: 10px;
+}
+table tr th{
+    color: lightgreen;
+    font-weight: bold;
+}
+table tr{
+    margin: .5% 0;
+}
